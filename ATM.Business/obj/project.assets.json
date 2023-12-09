@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "ATM.models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ATM.models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ATM.models.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "ATM.models/1.0.0": {
-      "type": "project",
-      "path": "../ATM.models/ATM.models.csproj",
-      "msbuildProject": "../ATM.models/ATM.models.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "ATM.models >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\dmcgu\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM\\ATM.csproj",
-      "projectName": "ATM",
-      "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM\\ATM.csproj",
+      "projectUniqueName": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM.Business\\ATM.Business.csproj",
+      "projectName": "ATM.Business",
+      "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM.Business\\ATM.Business.csproj",
       "packagesPath": "C:\\Users\\dmcgu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM\\obj\\",
+      "outputPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dmcgu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM.models\\ATM.models.csproj": {
-              "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM.models\\ATM.models.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
