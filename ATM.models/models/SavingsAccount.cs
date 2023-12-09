@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ATM.models.models
 {
-    internal class SavingsAccount
+    internal class SavingsAccount : Account
     {
+        public SavingsAccount() { }
+
+        public override string AccountType => "Savings";
     }
 }

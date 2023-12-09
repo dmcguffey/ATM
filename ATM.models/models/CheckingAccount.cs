@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ATM.models.models
 {
-    internal class CheckingAccount
+    internal class CheckingAccount : Account
     {
+        public CheckingAccount(){ }
+        
+        public int CardNumber { get; protected set; }
+        public int pinNumber { get; protected set; }
+
+        public override string AccountType => "Checking";
+
     }
 }
