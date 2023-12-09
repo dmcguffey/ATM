@@ -20,6 +20,7 @@ namespace ATM.models.models
             Console.WriteLine($"Account Number: {AccountNumber}");
             Console.WriteLine($"{AccountType}");
             Console.WriteLine($"Current Balance: {balance}");
+            Console.WriteLine("------------------------------");
         }
 
     }
