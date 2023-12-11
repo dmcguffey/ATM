@@ -12,6 +12,8 @@ namespace ATM.models.models
         public abstract string AccountType { get; }
         public int AccountNumber {  get; protected set; }
         public double balance {  get; protected set; }
+        public int CardNumber { get; protected set; }
+        public int pinNumber { get; protected set; }
 
         public void DisplayInfo()
         {
