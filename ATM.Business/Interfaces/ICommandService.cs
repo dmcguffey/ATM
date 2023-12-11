@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace ATM.Business.Interfaces
 {
-    internal interface ICommandService
+    public interface ICommandService
     {
+        //display balance for users
+        public void DisplayBalance() { }
+
+        //withdraw
+        public void withdraw(decimal amount) { }
+
+        //deposit
+        public void deposit(decimal amount) { }
     }
 }
