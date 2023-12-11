@@ -19,5 +19,11 @@ namespace ATM.Business.Services
         {
             balance -= amount;
         }
+
+        public void TransferFunds(decimal balance, decimal amount, decimal AccountBalance)
+        {
+            balance = balance + amount;
+            AccountBalance = AccountBalance - amount;
+        }
     }
 }
