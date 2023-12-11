@@ -8,7 +8,7 @@ using ATM.models.models;
 
 namespace ATM.Business.Services
 {
-    internal class CommandService : ICommandService
+    internal class AccountService : ICommandService
     {
         public void deposit(decimal balance,decimal amount)
         {
