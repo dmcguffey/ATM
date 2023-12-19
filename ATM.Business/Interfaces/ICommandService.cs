@@ -8,13 +8,13 @@ namespace ATM.Business.Interfaces
 {
     public interface ICommandService
     {
-        //display balance for users
-        public void DisplayBalance() { }
 
         //withdraw
-        public void withdraw(decimal amount) { }
+        public void withdraw(decimal balance, decimal amount);
 
         //deposit
-        public void deposit(decimal amount) { }
+        public void deposit(decimal balance, decimal amount);
+        //Transfer funds from checking to savings or vice versa
+        public void TransferFunds(decimal balance, decimal amount, decimal AccountBalance);
     }
 }

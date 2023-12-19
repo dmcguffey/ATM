@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ATM/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ATM.models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ATM.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ATM.dll": {}
+        }
+      },
+      "ATM.models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ATM.models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ATM.models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ATM/1.0.0": {
+      "type": "project",
+      "path": "../ATM/ATM.csproj",
+      "msbuildProject": "../ATM/ATM.csproj"
+    },
+    "ATM.models/1.0.0": {
+      "type": "project",
+      "path": "../ATM.models/ATM.models.csproj",
+      "msbuildProject": "../ATM.models/ATM.models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ATM >= 1.0.0",
+      "ATM.models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\dmcgu\\.nuget\\packages\\": {}
@@ -33,7 +71,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM.models\\ATM.models.csproj": {
+              "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM.models\\ATM.models.csproj"
+            },
+            "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM\\ATM.csproj": {
+              "projectPath": "C:\\Users\\dmcgu\\Desktop\\Projects\\ATM\\ATM\\ATM.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
