@@ -10,10 +10,23 @@ namespace ATM.Business.Services
     {
         public CardCheck() { }
         
-        public bool IsCard(int CardNumber)
+        public static bool IsCard(string CardNumber)
         {
-            //Apply Luhn's Algorithm for validating a real card
-            throw new NotImplementedException();
+            int sum = 0;
+
+            foreach(var digit in CardNumber.Split(','))
+            {
+                var number = int.Parse(digit);
+                if (number % 2 != 0)
+                {
+                    number *= 2;
+                }
+                sum = number / 10;
+                sum = number % 10;
+
+            }
+
+            return (sum % 10 == 0);
         }
     }
 }
