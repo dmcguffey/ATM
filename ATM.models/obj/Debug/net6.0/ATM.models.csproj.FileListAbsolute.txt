@@ -1,0 +1,11 @@
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\bin\Debug\net6.0\ATM.models.deps.json
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\bin\Debug\net6.0\ATM.models.dll
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\bin\Debug\net6.0\ATM.models.pdb
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\obj\Debug\net6.0\ATM.models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\obj\Debug\net6.0\ATM.models.AssemblyInfoInputs.cache
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\obj\Debug\net6.0\ATM.models.AssemblyInfo.cs
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\obj\Debug\net6.0\ATM.models.csproj.CoreCompileInputs.cache
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\obj\Debug\net6.0\ATM.models.dll
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\obj\Debug\net6.0\refint\ATM.models.dll
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\obj\Debug\net6.0\ATM.models.pdb
+C:\Users\dmcgu\Desktop\Projects\ATM\ATM.models\obj\Debug\net6.0\ref\ATM.models.dll
