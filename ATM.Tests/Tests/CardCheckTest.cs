@@ -10,16 +10,27 @@ namespace ATM.Tests.Tests
 {
     public class CardCheckTest
     {
-        [Theory]
-        [InlineData("4111111111111111", true)]
-
-        public void IsCard(string cardNumber, bool expected)
+        [Fact]
+        public void IsCard()
         {
-            //ARRANGE not necessary with static
+            //ARRANGE
+            CardCheckTest cardCheck = new CardCheckTest();
+            string cardNumber = "4111111111111111";
             //ACT
             bool actual = CardCheck.IsCard(cardNumber);
             //ASSERT
-            Assert.Equal(expected, actual);
+            Assert.True(actual);
+        }
+        [Fact]
+        public void IsNotCard()
+        {
+            //ARRANGE
+            CardCheckTest cardCheck = new CardCheckTest();
+            string cardNumber = "4111111111111112";
+            //ACT
+            bool actual = CardCheck.IsCard(cardNumber);
+            //Assert
+            Assert.False(actual);
         }
     }
 }
