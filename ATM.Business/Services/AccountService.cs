@@ -20,10 +20,11 @@ namespace ATM.Business.Services
             return balance -= amount;
         }
 
-        /*public decimal TransferFunds(decimal balance, decimal amount, decimal AccountBalance)
+        public (decimal newBalance, decimal newAccountBalance) TransferFunds(decimal balance, decimal AccountBalance, decimal amount)
         {
-            balance = balance + amount;
-            AccountBalance = AccountBalance - amount;
-        }*/
+            balance += amount;
+            AccountBalance -= amount;
+            return (balance, AccountBalance);
+        }
     }
 }

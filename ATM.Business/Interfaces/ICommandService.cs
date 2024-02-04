@@ -15,6 +15,6 @@ namespace ATM.Business.Interfaces
         //deposit
         public decimal Deposit(decimal balance, decimal amount);
         //Transfer funds from checking to savings or vice versa
-        //public decimal TransferFunds(decimal balance, decimal amount, decimal AccountBalance);
+        public (decimal newBalance, decimal newAccountBalance) TransferFunds(decimal balance, decimal AccountBalance, decimal amount);
     }
 }

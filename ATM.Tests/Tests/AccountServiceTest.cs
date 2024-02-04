@@ -41,5 +41,22 @@ namespace ATM.Tests.Tests
             //ASSERT
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+
+        public void FundsTransferred()
+        {
+            //ARRANGE
+            decimal FirstBalance = 2000.00m;
+            decimal SecondBalance = 1000.00m;
+            decimal TransferAmount = 500.00m;
+            AccountService challenger = new AccountService();
+            //ACT
+            (decimal New_FirstBalance, decimal New_SecondBalance) = challenger.TransferFunds(FirstBalance, SecondBalance, TransferAmount);
+
+            //ASSERT
+            Assert.Equal(FirstBalance + TransferAmount, New_FirstBalance);
+            Assert.Equal(SecondBalance - TransferAmount, New_SecondBalance);
+        }
     }
 }
