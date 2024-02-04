@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ATM.Business/1.0.0": {
+        "dependencies": {
+          "ATM": "1.0.0",
+          "ATM.models": "1.0.0"
+        },
+        "runtime": {
+          "ATM.Business.dll": {}
+        }
+      },
+      "ATM/1.0.0": {
+        "dependencies": {
+          "ATM.models": "1.0.0"
+        },
+        "runtime": {
+          "ATM.dll": {}
+        }
+      },
+      "ATM.models/1.0.0": {
+        "runtime": {
+          "ATM.models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ATM.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ATM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ATM.models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

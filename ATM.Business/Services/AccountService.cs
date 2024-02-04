@@ -8,22 +8,23 @@ using ATM.models.models;
 
 namespace ATM.Business.Services
 {
-    internal class AccountService : ICommandService
+    public class AccountService : ICommandService
     {
-        public void deposit(decimal balance,decimal amount)
+        public decimal Deposit(decimal balance,decimal amount)
+        {
+            return balance += amount;
+        }
+
+        public decimal Withdraw(decimal balance, decimal amount)
+        {
+            return balance -= amount;
+        }
+
+        public (decimal newBalance, decimal newAccountBalance) TransferFunds(decimal balance, decimal AccountBalance, decimal amount)
         {
             balance += amount;
-        }
-
-        public void withdraw(decimal balance, decimal amount)
-        {
-            balance -= amount;
-        }
-
-        public void TransferFunds(decimal balance, decimal amount, decimal AccountBalance)
-        {
-            balance = balance + amount;
-            AccountBalance = AccountBalance - amount;
+            AccountBalance -= amount;
+            return (balance, AccountBalance);
         }
     }
 }

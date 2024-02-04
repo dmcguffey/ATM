@@ -10,11 +10,11 @@ namespace ATM.Business.Interfaces
     {
 
         //withdraw
-        public void withdraw(decimal balance, decimal amount);
+        public decimal Withdraw(decimal balance, decimal amount);
 
         //deposit
-        public void deposit(decimal balance, decimal amount);
+        public decimal Deposit(decimal balance, decimal amount);
         //Transfer funds from checking to savings or vice versa
-        public void TransferFunds(decimal balance, decimal amount, decimal AccountBalance);
+        public (decimal newBalance, decimal newAccountBalance) TransferFunds(decimal balance, decimal AccountBalance, decimal amount);
     }
 }
